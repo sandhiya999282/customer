@@ -1,0 +1,241 @@
+*{
+    margin: 0%;
+    padding: 0%; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    padding: 5px;
+    margin: 2px;  
+    background-color: rgb(184, 50, 211);
+    
+}
+.navbar{
+    width: 1260px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    justify-items: start; 
+    border: 2px solid black; 
+    border-radius: 5px;  
+    display: flex; 
+    flex-direction: row; 
+    white-space: nowrap; 
+    list-style: none; 
+    box-shadow: 1px 5px 5px black;
+    
+    
+} 
+.logo{
+    justify-content: center;
+    font-size: xx-large;
+    margin-left: 30px; 
+    margin-top: 10px;
+}   
+ul{
+    display: flex; 
+    margin-left: 100px; 
+    list-style: none; 
+    
+}
+li{
+    list-style: none; 
+    white-space: nowrap; 
+    
+}
+a{ 
+    list-style: none;  
+    color: rgb(247, 243, 246); 
+    display: flex;
+    justify-items: center; 
+    margin-left: 50px; 
+    margin-top: 20px;
+    font-size: larger;  
+    cursor: pointer; 
+    white-space: nowrap;  
+    text-decoration: none;
+} 
+a:hover{
+    transform: translate(0.3); 
+    color: rgb(180, 250, 17);
+} 
+.Language{
+    justify-content: end; 
+    margin-left: 60px; 
+    border-radius: 20px; 
+    width: 90px; 
+    padding: 90px 0px 10px px; 
+    background-color: rgb(8, 0, 0);
+    border: 2px solid rgb(14, 13, 13); 
+    height: 40px;
+    margin-top: 5px;
+}  
+
+.l{
+    border-radius: 10px; 
+    height: 35px; 
+    
+} 
+.signin{
+    width: 70px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 15px; 
+    margin-top: 6px;
+    margin-left: 40px;  
+
+
+
+}
+.signin:hover{
+    transform: translate(10px);
+    background-color: greenyellow;
+}   
+
+.button{
+    margin-left: 50px;
+    background-color: blue; 
+    border-radius: 20px; 
+    color: aliceblue;
+    width: 100px; 
+    height: 45px;
+    margin-top: 3px; 
+    
+}
+
+.main h2{
+    font-size: 3rem;
+}
+
+h2{
+    justify-content: center;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bolder;
+}
+h5{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: larger;
+} 
+.book{
+    display: flex;
+    width: 80px; 
+    height: 40px; 
+    border-radius: 10px;
+    background-color: rgb(6, 239, 45); 
+    color: rgb(238, 234, 234);
+    margin-left: 1100px;
+    margin-top: -40px;  
+    border: 2px solid black; 
+    padding: 4px;
+    
+} 
+.book:hover{
+    transform: translate(20px);
+    background-color: rgb(150, 245, 61);
+}  
+
+.main{
+    
+    color: rgb(0, 5, 8);
+    text-align: center;
+    padding: 20px 40px;
+    margin: 5px;  
+    margin-top: 20px;
+}  
+ 
+.product{
+    display: flex;
+    justify-items: center;  
+    flex-direction: row; 
+    
+
+
+}
+
+
+input{
+    width: 600px;
+    height: 30px; 
+    border: 1px solid black; 
+    border-radius: 10px; 
+    cursor: pointer; 
+
+} 
+
+.hero{
+    text-align: center;  
+    flex-direction: row;
+    display: flex;
+    justify-items: center; 
+    margin-top: 50px; 
+    margin-left: 60px; 
+    gap: 150px;
+
+}
+.card{
+    width: 180px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.3; 
+    margin-left: 30px;
+}
+h3{
+    font-size: large; 
+    margin-top: 40px;  
+} 
+.card p{
+    margin-top: 40px; 
+    font-size: small; 
+    font-style: normal;
+
+} 
+.card:hover{
+    transform: translate(10px);
+    box-shadow: 0px 1px 0px 1px black;
+}
+.card2{
+    width: 180px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.3; 
+    margin-left: 60px; 
+}
+h3{
+    font-size: larger;
+    margin-top: 40px;
+}
+.card2 p{
+    margin-top: 40px;
+    font-size: small;
+    font-style: normal;
+}
+.card2:hover{
+    transform: translate(10px);
+    box-shadow: 1px 0px 1px 0px black;
+} 
+.card3{
+    width: 180px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 10px;
+    margin-left: 60px;
+}
+h3{
+    font-size: larger;
+    
+}
+.card3 p{
+    font-size: small;
+    font-style: normal; 
+    margin-top: 40px;
+}
+.card3:hover{
+    transform: translate(10px);
+    box-shadow: 1px 0px 1px 0px rgb(8, 8, 8);
+} 

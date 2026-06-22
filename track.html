@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Support Ticket</title>
+</head>
+<body> 
+
+    <center> 
+    <div class="box">
+
+    <h2>Customer Support Ticket System</h2>
+
+    <button onclick="createTicket()">Track Ticket</button>
+
+    <div id="output" style="line-height: 2;"> </div>
+
+    <script>
+        function createTicket() {
+
+            let ticketId = "TKT" + Math.floor(Math.random() * 100000);
+
+            document.getElementById("output").innerHTML = `
+                <h3>Ticket Created Successfully!</h3>
+                <p><b>Ticket ID:</b> ${ticketId}</p>
+                <p><b>Status:</b> Open</p>
+            `; 
+
+            // Team receives ticket after 10 seconds
+            setTimeout(() => {
+                document.getElementById("output").innerHTML +=
+                `<p><b>Support Team:</b> Ticket Received</p>
+                 <p><b>Status:</b> In Progress</p>`;
+            }, 10000);
+
+            // Problem fixed after 30 seconds
+            setTimeout(() => {
+                document.getElementById("output").innerHTML +=
+                `<p><b>Problem Fixed</b></p>
+                 <p><b>Status:</b> Resolved</p>`;
+            }, 30000);
+
+            // User notified after 50 seconds
+            setTimeout(() => {
+                document.getElementById("output").innerHTML +=
+                `<p><b>Notification Sent to User</b></p>
+                 <p><b>Status:</b> Closed</p>`;
+            }, 50000);
+        }
+    </script>  
+
+    </div>
+
+    </center> 
+
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        .box{
+            width: 450px;
+            height: 550px;
+            border: 2px solid black;
+            border-radius: 20px; 
+            box-shadow: 2px 2px 0px 0px;  
+            background-color: rgb(19, 219, 12);
+        }  
+        .box:hover{ 
+            transform: translate(20px);
+
+        }
+        h2{
+            margin-top: 70px;
+            padding: 10px 10px 10px 10px;
+
+        } 
+        button{
+            width: 90px;
+            height: 40px;
+            padding: 5px 5px 5px 5px; 
+            margin-top: 50px; 
+            border: 2px solid black;
+            cursor: pointer; 
+            border-radius: 10px;
+            
+        } 
+        button:hover{
+            transform: translate(10px);
+            box-shadow: 2px 2px 2px 0px;
+        }
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Ticket System</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .hero{
+            background: linear-gradient(135deg,#0d6efd,#0a58ca);
+            color:white;
+            min-height:80vh;
+            display:flex;
+            align-items:center;
+        }
+
+        .feature-card{
+            transition:0.3s;
+        }
+
+        .feature-card:hover{
+            transform:translateY(-8px);
+        }
+
+        .step-box{
+            background:#f8f9fa;
+            border-radius:10px;
+            padding:20px;
+        }
+
+        footer{
+            background:#212529;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            SupportDesk
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul> 
+            <button class="button"     onclick="speakGuide()"> Voice Guide </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">
+            Customer Support Ticket System
+        </h1>
+
+        <p class="lead mt-3">
+            Submit, Track and Resolve Customer Issues Efficiently
+        </p>
+
+        <a href="create ticket.html" class="btn btn-light btn-lg me-2"> Create Ticket</a>
+
+        <!-- <button class="btn btn-success btn-lg">
+            Track Ticket
+        </button>  --> 
+
+        <a href="voice report.html" class="btn btn-light btn-lg me-2"> Voice Report </a>
+
+        
+    </div>
+</section> 
+
+
+
+<!-- Features -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">
+            Our Features
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card h-100 text-center feature-card">
+                    <div class="card-body">
+                        <h3>🎫</h3>
+                        <h5>Create Ticket</h5>
+                        <p>Raise support requests easily.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100 text-center feature-card">
+                    <div class="card-body">
+                        <h3>🔍</h3>
+                        <h5>Track Status</h5>
+                        <p>Monitor ticket progress anytime.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100 text-center feature-card">
+                    <div class="card-body">
+                        <h3>📧</h3>
+                        <h5>Email Alerts</h5>
+                        <p>Instant notifications and updates.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100 text-center feature-card">
+                    <div class="card-body">
+                        <h3>⚡</h3>
+                        <h5>Fast Response</h5>
+                        <p>Quick issue resolution support.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">
+            How It Works
+        </h2>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-3">
+                <div class="step-box">
+                    <h1>1</h1>
+                    <p>Create Ticket</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="step-box">
+                    <h1>2</h1>
+                    <p>Get Ticket ID</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="step-box">
+                    <h1>3</h1>
+                    <p>Track Status</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="step-box">
+                    <h1>4</h1>
+                    <p>Issue Resolved</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">
+            Contact Us
+        </h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <form>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary w-100">
+                        Send Message
+                    </button> 
+
+                    
+     
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>  
+
+
+
+                    <script>
+                        function speakGuide() {
+                            let text = "Welcome to User Flexible system. I will Give you Guide How to Book the ticket Let's start to book the ticket. Click the below Book ticket button, Automatically switch Ticket form page fill your details like Enter your name,email,age, email Id, bugdet, destination then click the submit button. A ticket Id and other details will be generate Mail Check your mail and track    ENJOY YOUR JOURNEY ";
+                            let speech = new SpeechSynthesisUtterance(text);
+                            speech.lang = "en-US";
+                            speech.rate=0.8;
+                            speech.pitch=2;
+                            window.speechSynthesis.speak(speech);
+                        }
+                    </script>
+
+
+
+
+<!-- Footer -->
+<footer class="py-3 text-center">
+    <p class="mb-0">
+        © 2026 Customer Support Ticket System
+    </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
